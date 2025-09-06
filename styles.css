@@ -19,7 +19,7 @@ a{color:var(--green-dark);text-decoration:none}
   display:flex;gap:12px;align-items:center;justify-content:space-between;padding:10px 16px;z-index:10}
 .brand{font-weight:800;letter-spacing:.2px;display:flex;gap:8px;align-items:center}
 .brand .dot{width:10px;height:10px;background:var(--green-dark);border-radius:999px;display:inline-block}
-.nav a{margin-left:12px;font-size:24px;color:#333}
+.nav a{margin-left:12px;font-size:14px;color:#333}
 section{margin:16px 0}
 .card{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:16px}
 label{display:block;margin:10px 0 6px;font-weight:600}
@@ -54,3 +54,9 @@ textarea.output{width:100%;min-height:180px;border:1px dashed var(--border);bord
   color:#333;font-size:12px}
 .iconmenu img{width:28px;height:28px;display:block}
 @media (max-width:760px){.iconmenu a span{display:none}} /* só ícone no mobile */
+
+.brand img {
+  width: 140px;   /* largura da logo (pode aumentar/diminuir aqui) */
+  height: auto;   /* mantém a proporção */
+}
+
