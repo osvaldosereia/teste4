@@ -86,23 +86,47 @@ function mostrarResultado(tema){
 }
 
 function initIndex(){
+  // monta as opções fixas (fica pronto mas escondido até clicar em Buscar)
   renderOpcoesFixas();
+
+  // 1) Clique em "Buscar"
   $('#btn-buscar').addEventListener('click', async ()=>{
     const tema = $('#tema').value.trim();
-    if(!tema){ alert('Digite um tema.'); return; }
+    if(!tema){ 
+      alert('Digite um tema.'); 
+      return; 
+    }
+
+    // mostra a seção de opções
     $('#sec-opcoes').classList.remove('hidden');
+
+    // busca relacionados (JSON)
     const relacionados = await buscarRelacionadosPorTema(tema);
+
+    // só exibe se tiver algum resultado
     renderRelacionados(relacionados);
   });
+
+  // 2) Clique em "Gerar Prompt"
   $('#btn-gerar').addEventListener('click', ()=>{
     const tema = $('#tema').value.trim();
-    if(!tema){ alert('Digite um tema.'); return; }
+    if(!tema){ 
+      alert('Digite um tema.'); 
+      return; 
+    }
     mostrarResultado(tema);
   });
-  $('#btn-limpar').addEventListener('click', ()=>{ location.reload(); });
+
+  // 3) Clique em "Reiniciar"
+  $('#btn-limpar').addEventListener('click', ()=>{
+    location.reload();
+  });
+
+  // 4) Botões do resultado
   $('#btn-copiar').addEventListener('click', ()=> copiar($('#output').value));
   $('#btn-compartilhar').addEventListener('click', ()=> compartilhar($('#output').value));
 }
+
 
 // ===== List helpers (paginação simples por lote) =====
 function paginar(arr, offset, limit){ return (arr || []).slice(offset, offset + limit); }
