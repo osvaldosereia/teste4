@@ -132,7 +132,7 @@ async function initArtigos(){
       const wrap = document.createElement('div');
       wrap.innerHTML = `<strong>${it.artigo}</strong> — ${it.texto}<br/>`;
       const btn = document.createElement('button'); btn.className='btn small'; btn.textContent='Copiar';
-      btn.onclick = ()=> copiar(f"{it.artigo} — {it.texto}");
+     btn.onclick = ()=> copiar(`${it.artigo} — ${it.texto}`);
       wrap.appendChild(btn);
       area.appendChild(wrap);
       area.appendChild(document.createElement('hr'));
