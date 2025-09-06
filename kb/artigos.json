@@ -1,0 +1,42 @@
+[
+  {
+    "codigo": "CPC",
+    "artigo": "Art. 1º",
+    "texto": "A ação de alimentos é de rito especial."
+  },
+  {
+    "codigo": "CPC",
+    "artigo": "Art. 2º",
+    "texto": "A petição inicial conterá o valor pretendido."
+  },
+  {
+    "codigo": "CP",
+    "artigo": "Art. 129",
+    "texto": "Ofender a integridade corporal ou a saúde de outrem."
+  },
+  {
+    "codigo": "CP",
+    "artigo": "Art. 121",
+    "texto": "Matar alguém."
+  },
+  {
+    "codigo": "CC",
+    "artigo": "Art. 186",
+    "texto": "Aquele que, por ação ou omissão voluntária, causar dano a outrem comete ato ilícito."
+  },
+  {
+    "codigo": "CC",
+    "artigo": "Art. 927",
+    "texto": "Aquele que causar dano a outrem fica obrigado a repará-lo."
+  },
+  {
+    "codigo": "CLT",
+    "artigo": "Art. 223-G",
+    "texto": "Critérios de fixação do dano extrapatrimonial."
+  },
+  {
+    "codigo": "CF",
+    "artigo": "Art. 5º, X",
+    "texto": "São invioláveis a intimidade, a vida privada, a honra e a imagem das pessoas."
+  }
+]

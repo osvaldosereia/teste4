@@ -1,0 +1,14 @@
+[
+  {
+    "categoria": "Penal",
+    "titulo": "Curso de Direito Penal",
+    "site": "Saraiva",
+    "link": "https://example.com/livro-penal"
+  },
+  {
+    "categoria": "Processo Civil",
+    "titulo": "Manual de Processo Civil",
+    "site": "Amazon",
+    "link": "https://example.com/livro-cpc"
+  }
+]
